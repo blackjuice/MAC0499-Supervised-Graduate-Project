@@ -14,11 +14,11 @@ Forensic facial reconstruction on criminal cases using Blender as main software.
 <a name="todo"></a>
 ## Tasks
 
-00. There are still minor fixes left to be addressed:
+#### 00. There are still minor fixes left to be addressed:
 
 - [ ] 00. Fix parameters
 
-01. **Landmark process**. This step manipulates only the imported skull:
+#### 01. **Landmark process**. This step manipulates only the imported skull:
 
 - [ ] 01. **MANIPULATOR**: the *.stl* imported file of the skull must go through a clean up, lowering number of polygons for light manipulation
   - [ ] 01.0. Simplify:
@@ -35,7 +35,7 @@ Forensic facial reconstruction on criminal cases using Blender as main software.
   - [ ] 03.1. *generator( gender, group )*: `Python` script that receives 2 parameters and returns 31 landmark cylinders, all named, grouped and colored
 - [ ] 04. **LANDMARK** - POSITIONING: having all coordinates of the landmarks on the skull and the landmarks cylinders, ready to be placed, this step returns the skull with positioned landmarks
 
-02. **Skin process**. This step generates and manipulates the head generated from MakeHuman. We will call the generated head as *skin*.
+#### 02. **Skin process**. This step generates and manipulates the head generated from MakeHuman. We will call the generated head as *skin*.
 
 - [ ] 05. **MAKEHUMAN v.1.1.0**:
   - [ ] 05.0. Engine: Figure out how to use MakeHuman without needing to open the software
