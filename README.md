@@ -1,52 +1,56 @@
 # MAC0499 - Supervised Graduate Project
 
-*version*: `Blender 2.76b`
-
 Forensic facial reconstruction on criminal cases using Blender as main software.
 
 ## Contents
 
 * [Tasks](#todo)
-* [Steps used](#steps)
-* [Landmarks](#landmarks)
 * [Subjects](#subjects)
-* [MakeHuman](#mkhuman)
-* [Addons](#addons)
+* [Softwares](#softwares)
+* [Landmarks](#landmarks)
+* [Steps used](#steps)
 * [References](#references)
 
 <a name="todo"></a>
 ## Tasks
 
+00. There are still minor fixes left to be addressed:
+
 - [ ] 00. Fix parameters
-- [ ] 01. SKULL
-  - [ ] 01.0. import *.stl* subject
-  - [ ] 01.1. Simplify:
-    - [ ] 01.1.0. clean up skull by deleting faces
-    - [ ] 01.1.1. `DECIMATE` addon: lower ratio at **Collapse**
-  - [ ] 01.2. Align:
-    - [ ] 01.2.0. set origin to Center of Mass
-    - [ ] 01.2.1. align horizontally and vertically
-  - [ ] 01.
-  - [ ] asdasd
 
-<a name="addons"></a>
-## Addons
+01. **Landmark process**. This step manipulates only the imported skull:
 
-Directory for the addons:
+- [ ] 01. **MANIPULATOR**: the *.stl* imported file of the skull must go through a clean up, lowering number of polygons for light manipulation
+  - [ ] 01.0. Simplify:
+    - [ ] 01.0.0. clean up skull by deleting faces
+    - [ ] 01.0.1. `DECIMATE` tool: lower ratio to 0.1, at **Collapse**
+  - [ ] 01.1. Alignment:
+    - [ ] 01.1.0. set origin to Center of Mass
+    - [ ] 01.1.1. align mesh along X, Y, Z axis
+- [ ] 02. **LANDMARK** - COORDINATES: After having a more lighter version of the skull, the mesh must go under a heavy points' analysis.
+  - [ ] 02.0. Manual analysis: must be our first approach. The user will be the one who will position and identify landmark points.
+  - [ ] 02.1. *Automatic*: skull must go through a point analysis, giving us a table containing all the landmark coordinates throughout the skull, with horizontal planes such as the Frankfurt plane. With all the data ready, Blender must print the data on the skull for the user.
+- [ ] 03. **LANDMARK** - GENERATOR: user gives an input containing 2 informations: *gender* and *group* of the subject
+  - [ ] 03.0. Input box: there must be a toolbar box on the interface that receives the 3 parameters
+  - [ ] 03.1. *generator( gender, group )*: `Python` script that receives 2 parameters and returns 31 landmark cylinders, all named, grouped and colored
+- [ ] 04. **LANDMARK** - POSITIONING: having all coordinates of the landmarks on the skull and the landmarks cylinders, ready to be placed, this step returns the skull with positioned landmarks
 
-```bash
-\276b\2.76\scripts\addons
-```
+02. **Skin process**. This step generates and manipulates the head generated from MakeHuman. We will call the generated head as *skin*.
 
-Activate `Import-Export: Import: MakeHuman(.mhx)` and `Rigging: Rigify`
-
-<a name="mkhuman"></a>
-## MakeHuman
-
-*Version*: `1.1.0`
+- [ ] 05. **MAKEHUMAN v.1.1.0**:
+  - [ ] 05.0. Engine: Figure out how to use MakeHuman without needing to open the software
+  - [ ] 05.1. Head extraction: user gives an input containing 3 inputs: *age*, *gender* and *group* of the subject. After generating the character, we need to know how to extract the head only
+  - [ ] 05.2. Simplify: the extracted head of the generated character must undergo a clean up, such as deleting unnecessary faces of the mesh
+- [ ] 06. **ARMATURE**: the skin now also have to be heavily analyzed
+  - [ ] 06.0. Alignment: similar to `01.1.`
+  - [ ] 06.1. Rigging: skin will be heavily rigged. Analysis must be executed in order to identify where the bones (of the armature) should be correctly placed for the deformation process.
+- [ ] 07. **Deformation process**. This step will combine the skin generated with the skull, which contains all the anatomical information. With this last process, the subject with the facial reconstructed will be ready for evaluation.
+  - [ ] 07.0. Snap: landmark bones of the armature from the skin will be snapped to the landmark points/positions/cylinders
 
 <a name="subjects"></a>
 ## Subjects
+
+Currently, there are 4 subjects that must go under reconstruction. 3 main characteristics are crucial data: gender, age and group of the subject.
 
 | subject | gender  | age | group     |
 |:--------|:--------|:----|:----------|
@@ -55,8 +59,32 @@ Activate `Import-Export: Import: MakeHuman(.mhx)` and `Rigging: Rigify`
 | Felipe  | male    | 21  | caucasian | *
 | Bruna   | male    | 22  | caucasian |
 
+
+<a name="softwares"></a>
+## Softwares
+
+### Blender
+
+*version*: `Blender 2.76b`
+
+Directory for the addons:
+
+```bash
+\276b\2.76\scripts\addons
+```
+
+The Blender 2.76b version supports MakeHuman tools. It's necessary to activate the following: `Import-Export: Import: MakeHuman(.mhx)` and `Rigging: Rigify`.
+
+### MakeHuman
+
+*Version*: `1.1.0`
+
+Future version of the research must use MakeHuman as an engine instead of a standalone.
+
 <a name="landmarks"></a>
 ## Landmarks
+
+There are 2 main layer of points and 31 landmark points.
 
 | Midline points      | Bilateral points      |
 |:--------------------|:----------------------|
