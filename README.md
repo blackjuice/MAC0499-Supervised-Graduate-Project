@@ -156,3 +156,7 @@ It could...
 * blender org python: https://www.blender.org/forum/viewforum.php?f=9
 * blender org interface: https://www.blender.org/forum/viewforum.php?f=8
 * blender doc: https://docs.blender.org/api/249PythonDoc/
+* fluid designer Modifying Blenders UI: https://www.youtube.com/watch?v=C8xcR-kF7X8
+* fluid designer source code: https://github.com/Microvellum/Fluid-Designer
+* Setting up Eclipse for Blender Python Debugging: https://www.blendernation.com/2013/09/25/setting-up-eclipse-for-blender-python-debugging/
+* Python, Blender and a bit of debuggery: http://daniepstein.com/daniepstein/tutorials/python-blender-and-a-bit-of-debuggery/
