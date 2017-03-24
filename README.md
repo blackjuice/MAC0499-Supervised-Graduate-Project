@@ -150,3 +150,6 @@ It could...
 * http://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=1005&context=anthr_symposium
 * https://archives.fbi.gov/archives/about-us/lab/forensic-science-communications/fsc/jan2001/phillips.htm
 * http://delivery.acm.org/10.1145/890000/882307/p554-kahler.pdf?ip=143.107.44.18&id=882307&acc=ACTIVE%20SERVICE&key=4D4702B0C3E38B35.4D4702B0C3E38B35.CAD1463F6EF63783.4D4702B0C3E38B35&CFID=703274842&CFTOKEN=11730693&__acm__=1481548127_a72993439f72ce698166a65bc8368291
+* write addon: https://docs.blender.org/api/blender_python_api_2_65_5/info_tutorial_addon.html
+* python example blender: https://wiki.blender.org/index.php/Doc:2.4/Manual/Extensions/Python/Example
+* simple panel removal: http://blender.stackexchange.com/questions/19249/simplify-blender-gui-using-python
