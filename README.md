@@ -153,3 +153,6 @@ It could...
 * write addon: https://docs.blender.org/api/blender_python_api_2_65_5/info_tutorial_addon.html
 * python example blender: https://wiki.blender.org/index.php/Doc:2.4/Manual/Extensions/Python/Example
 * simple panel removal: http://blender.stackexchange.com/questions/19249/simplify-blender-gui-using-python
+* blender org python: https://www.blender.org/forum/viewforum.php?f=9
+* blender org interface: https://www.blender.org/forum/viewforum.php?f=8
+* blender doc: https://docs.blender.org/api/249PythonDoc/
