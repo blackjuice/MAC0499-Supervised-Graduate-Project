@@ -164,4 +164,16 @@ It could...
 enable addon through scripts
 
 * How to enable and disable Add-ons via Python?: http://blender.stackexchange.com/questions/32409/how-to-enable-and-disable-add-ons-via-python
-*
+
+3D wrapping methods:
+
+* 3D Convex Hull (CGAL)
+
+3D Face Recognition without Facial Surface
+Reconstruction
+
+* http://www.face-rec.org/algorithms/3d_morph/cis-2003-05.pdf
+
+keyword: Feature detection
+
+* http://www.cs.technion.ac.il/~ron/PAPERS/BroBroKimIJCV05.pdf
