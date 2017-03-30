@@ -160,3 +160,8 @@ It could...
 * fluid designer source code: https://github.com/Microvellum/Fluid-Designer
 * Setting up Eclipse for Blender Python Debugging: https://www.blendernation.com/2013/09/25/setting-up-eclipse-for-blender-python-debugging/
 * Python, Blender and a bit of debuggery: http://daniepstein.com/daniepstein/tutorials/python-blender-and-a-bit-of-debuggery/
+
+enable addon through scripts
+
+* How to enable and disable Add-ons via Python?: http://blender.stackexchange.com/questions/32409/how-to-enable-and-disable-add-ons-via-python
+*
