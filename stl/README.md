@@ -74,3 +74,8 @@ Now your file is ready for export.
 1. Select `File > Export as .STL (* .stl)`
 
 Tip: Modifiers can be applied during export or prior.
+
+
+## Reading .stl with Python
+
+* [numpy-stl 2.2.0](https://pypi.python.org/pypi/numpy-stl)
