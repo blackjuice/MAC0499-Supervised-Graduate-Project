@@ -177,3 +177,7 @@ Reconstruction
 keyword: Feature detection
 
 * http://www.cs.technion.ac.il/~ron/PAPERS/BroBroKimIJCV05.pdf
+
+stl files
+
+* https://exploreideasdaily.wordpress.com/tag/stl-files/
