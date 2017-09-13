@@ -189,3 +189,11 @@ Add-ons Development
 Video basic addon template
 
 * https://www.youtube.com/watch?time_continue=526&v=OEkrQGFqM10
+
+Addon Template Generator
+
+* https://www.youtube.com/watch?v=elMOAmZqylg&feature=youtu.be
+
+Code Template for Blender Add-ons
+
+* https://github.com/maxnewton/blender-addon-template

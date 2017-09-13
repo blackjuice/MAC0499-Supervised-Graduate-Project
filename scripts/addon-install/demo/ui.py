@@ -1,5 +1,5 @@
 # Blender Add-on Template
-# Contributor(s): Aaron Powell (aaron@aaronpowell.me)
+# Contributor(s): Lucas Sung Jun Hong (lucas.sj.hong@gmail.com)
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,18 +21,20 @@ from bpy.types import Panel
 # Add additional functions here
 #
 
-class MyPanel(Panel):
-    bl_label = 'My Awesome Panel'
-    bl_space_type = 'PROPERTIES'
-    bl_region_type= 'WINDOW'
-    bl_context = 'render'
+class SimpleToolPanel(Panel):
+  bl_space_type   = 'VIEW_3D'
+  bl_region_type  = 'TOOLS'
+  bl_label        = 'Tools Tab Label'
+  bl_context      = 'objectmode'
+  bl_category     = 'ForensicFR'
 
-    def draw(self, context):
-        row = self.layout.row()
-        row.prop(context.scene, 'my_property')
+  # UI elements
+  def draw(self, context):
+    layout = self.layout
+    layout.operator('mesh.primitive_cube_add', text = 'Add new cube')
 
 def register():
-    bpy.utils.register_class(MyPanel)
+  bpy.utils.register_class(MyPanel)
 
 def unregister():
-    bpy.utils.unregister_class(MyPanel)
+  bpy.utils.unregister_class(MyPanel)

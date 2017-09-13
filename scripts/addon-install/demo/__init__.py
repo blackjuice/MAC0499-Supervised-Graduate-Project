@@ -1,5 +1,5 @@
 # Blender Add-on Template
-# Contributor(s): Aaron Powell (aaron@aaronpowell.me)
+# Contributor(s): Lucas Sung Jun Hong (lucas.sj.hong@gmail.com)
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,18 +15,18 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 bl_info = {
-        "name": "My Awesome Script",
-        "description": "Single line describing my awesome script.",
-        "author": "Aaron Powell",
-        "version": (1, 0),
-        "blender": (2, 78, 0),
-        "location": "Properties > Render > My Awesome Panel",
-        "warning": "", # used for warning icon and text in add-ons panel
-        "wiki_url": "http://my.wiki.url",
-        "tracker_url": "http://my.bugtracker.url",
-        "support": "COMMUNITY",
-        "category": "Render"
-        }
+  "name": "ForensicFR",
+  "description": "3D Forensic Facial Reconstruction",
+  "author": "Lucas Sung Jun Hong",
+  "version": (0, 0),
+  "blender": (2, 72, 0),
+  "location": "Tool Shelf",
+  "warning": "", # used for warning icon and text in add-ons panel
+  "wiki_url": "http://my.wiki.urlhttps://github.com/blackjuice/MAC0499-Supervised-Graduate-Project",
+  "tracker_url": "",
+  "support": "",
+  "category": "ForensicFR"
+  }
 
 import bpy
 
@@ -35,16 +35,16 @@ import bpy
 #
 
 def register():
-    from . import properties
-    from . import ui
-    properties.register()
-    ui.register()
+  from . import properties
+  from . import ui
+  properties.register()
+  ui.register()
 
 def unregister():
-    from . import properties
-    from . import ui
-    properties.unregister()
-    ui.unregister()
+  from . import properties
+  from . import ui
+  properties.unregister()
+  ui.unregister()
 
 if __name__ == '__main__':
-    register()
+  register()
