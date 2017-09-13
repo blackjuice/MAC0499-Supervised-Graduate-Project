@@ -181,3 +181,11 @@ keyword: Feature detection
 stl files
 
 * https://exploreideasdaily.wordpress.com/tag/stl-files/
+
+Add-ons Development
+
+* https://wiki.blender.org/index.php/Dev:Py/Scripts
+
+Video basic addon template
+
+* https://www.youtube.com/watch?time_continue=526&v=OEkrQGFqM10
